@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/theme1">
+
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_textview"
+        android:background="@android:color/background_dark"
+        app:scale_base_height="120"
+        app:scale_base_width="400">
+
+        <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9999/99/99 (일)"
+        android:textColor="@android:color/background_light"
+
+        app:scale_left="38"
+        app:scale_textsize="13"
+        app:scale_width="120"
+        app:scale_height="25"
+        />
+
+        <TextView
+            android:id="@+id/txtAPM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="left"
+            android:text="PM"
+            android:textColor="@android:color/background_light"
+
+            app:scale_textsize="14"
+            app:scale_width="54"
+            app:scale_height="25"
+            />
+
+        <TextView
+            android:id="@+id/txtTimeBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/liquidcrystal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="88:88:88"
+            android:textColor="#1d1d1d"
+
+            app:scale_height="100"
+            app:scale_left="0"
+            app:scale_textsize="90"
+            app:scale_top="1"
+            app:scale_width="380" />
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/liquidcrystal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="@android:color/background_light"
+
+            app:scale_height="100"
+            app:scale_left="0"
+            app:scale_textsize="90"
+            app:scale_top="1"
+            app:scale_width="380" />
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+</LinearLayout>
